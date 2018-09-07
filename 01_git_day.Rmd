@@ -53,7 +53,7 @@ knitr::include_graphics("pics/git_openbash.png")
 
 ## Mac OS
 
-I'm putting two options here (I don't have a Mac so have never tried either but these `r emo::ji("stuck_out_tongue_winking_eye") are the top two recommendations in happygitwithr.com).
+I'm putting two options here (I don't have a Mac so have never tried either `r emo::ji("stuck_out_tongue_winking_eye")`but these  are the top two recommendations in Happy Git).
 
 1. Install Xcode.  This can be done using command line tools in the shell using `xcode-select --install`.  
 
