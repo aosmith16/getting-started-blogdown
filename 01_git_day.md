@@ -35,9 +35,7 @@ consider using a personal email instead of your temporary school email.
 You can change this later if needed (I did), but it is simplest to pick
 a long-term email from the start.
 
-![](./01_git_day_files/pics/git_start_window.png)
-
-![](./01_git_day_files/pics/git_start_window.png)<!-- -->
+![](01_git_day_files/figure-gfm/git_start_window.PNG)<!-- -->
 
 # Update R and RStudio to current versions
 
@@ -57,7 +55,7 @@ the “Use Git from the Windows Command Prompt” is chosen when “Adjusting
 the PATH environment”. This was the default when I installed things, but
 watch for this and make sure.
 
-![](./01_git_day_files/pics/git_command_prompt.png)<!-- -->
+![](./01_git_day_files/pics/git_command_prompt.PNG)<!-- -->
 
 You should be able to find the executable in `C:/Program
 Files/Git/bin/git.exe`.
