@@ -1,8 +1,9 @@
 ---
 title: "Session 1 - Git Day"
-author: "Ariel Muldoon"
 date: "May 7, 2018"
-output: github_document
+output: 
+  github_document:
+      toc: TRUE
 ---
 
 ```{r setup, include=FALSE}
@@ -21,7 +22,9 @@ Go to https://github.com/ and sign up.  You'll need to pick a user name that you
 
 You will need to associate your account with an email address.  I recommend picking an email address you will have for the long-term, so consider using a personal email instead of your temporary school email.  You can change this later if needed (I did), but it is simplest to pick a long-term email from the start.
 
-```{r, echo = FALSE}
+![](pics/git_start_window.png)
+
+```{r, echo = FALSE, results = "asis"}
 knitr::include_graphics("pics/git_start_window.png")
 ```
 
@@ -76,6 +79,7 @@ You will put in a user name and an email address to be associated with Git.
 The user name can be anything you want.
 
 The command in the shell is:
+
 `git config --global user.name "User Name"` Put your name in place of `"User Name"`.
 
 The user email should be the email you are using for your GitHub account.

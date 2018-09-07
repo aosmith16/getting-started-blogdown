@@ -1,6 +1,5 @@
 Session 1 - Git Day
 ================
-Ariel Muldoon
 May 7, 2018
 
 During the first blogdown work session we didn’t do anything with
@@ -29,6 +28,8 @@ recommend picking an email address you will have for the long-term, so
 consider using a personal email instead of your temporary school email.
 You can change this later if needed (I did), but it is simplest to pick
 a long-term email from the start.
+
+![](pics/git_start_window.png)
 
 ![](pics/git_start_window.png)<!-- -->
 
@@ -94,8 +95,10 @@ Git.
 
 The user name can be anything you want.
 
-The command in the shell is: `git config --global user.name "User Name"`
-Put your name in place of `"User Name"`.
+The command in the shell is:
+
+`git config --global user.name "User Name"` Put your name in place of
+`"User Name"`.
 
 The user email should be the email you are using for your GitHub
 account.
