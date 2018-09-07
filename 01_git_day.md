@@ -27,11 +27,12 @@ You will need to associate your account with an email address. I
 recommend picking an email address you will have for the long-term, so
 consider using a personal email instead of your temporary school email.
 You can change this later if needed (I did), but it is simplest to pick
-a long-term email from the start.
+a long-term email from the
+start.
 
 ![](./01_git_day_files/pics/git_start_window.png)
 
-![](./01_git_day_files/pics/git_start_window.png)<!-- -->
+![](C:/Users/Owner/Documents/Aosmith/R%20workshops/getting-started-blogdown/01_git_day_files/pics/git_start_window.png)<!-- -->
 
 # Update R and RStudio to current versions
 
