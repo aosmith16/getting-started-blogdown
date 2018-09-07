@@ -29,9 +29,7 @@ consider using a personal email instead of your temporary school email.
 You can change this later if needed (I did), but it is simplest to pick
 a long-term email from the start.
 
-![](pics/git_start_window.png)
-
-![](pics/git_start_window.png)<!-- -->
+![](./pics/git_start_window.png)<!-- -->
 
 # Update R and RStudio to current versions
 
@@ -51,7 +49,7 @@ the “Use Git from the Windows Command Prompt” is chosen when “Adjusting
 the PATH environment”. This was the default when I installed things, but
 watch for this and make sure.
 
-![](pics/git_command_prompt.png)<!-- -->
+![](./pics/git_command_prompt.png)<!-- -->
 
 You should be able to find the executable in `C:/Program
 Files/Git/bin/git.exe`.
@@ -59,7 +57,7 @@ Files/Git/bin/git.exe`.
 At the end of installation, launch Git Bash. You don’t need to review
 the release notes.
 
-![](pics/git_openbash.png)<!-- -->
+![](./pics/git_openbash.png)<!-- -->
 
 ## Mac OS
 
@@ -119,7 +117,7 @@ we can make local changes and *push* them on to GitHub.
 Go to your GitHub account. Go to the `+` drop down menu in the upper
 righthand corner and choose `New Repository`.
 
-![](pics/github_newrepo.png)<!-- -->
+![](./pics/github_newrepo.png)<!-- -->
 
 1.  Make a repository name. Keep it simple. You cannot have spaces in
     names but can include dashes (hyphens). I used `test` for my first
@@ -137,7 +135,7 @@ righthand corner and choose `New Repository`.
 6.  Once the repository is created, click the `Clone or download` button
     and copy the URL to the clipboard with the clipboard button.
 
-![](pics/github_clone.png)<!-- -->
+![](./pics/github_clone.png)<!-- -->
 
 ## Clone repository from GitHub onto local computer
 
@@ -228,23 +226,23 @@ In RStudio, go to `File > New Project...`
 
 Select `Version Control`
 
-![](pics/rstudio_vcontrol.png)<!-- -->
+![](./pics/rstudio_vcontrol.png)<!-- -->
 
 And then `Git`
 
-![](pics/rstudio_git.png)<!-- -->
+![](./pics/rstudio_git.png)<!-- -->
 
 Paste the cloned URL from the remote repository. You can browse to
 choose a directory for the local repository if you want to save it
 somewhere specific.
 
-![](pics/rstudio_clone.png)<!-- -->
+![](./pics/rstudio_clone.png)<!-- -->
 
 The remote files will be downloaded into the new folder and the new
 Project will open. You will have a `Git` tab in your “Environment” Pane
 in RStudio.
 
-![](pics/rstudio_gittab.png)<!-- -->
+![](./pics/rstudio_gittab.png)<!-- -->
 
 **If you cannot make a version control project**
 
@@ -265,7 +263,7 @@ try the version control Project again.
 See [Chapter 14](http://happygitwithr.com/rstudio-see-git.html) of Happy
 Git for more detailed information.
 
-![](pics/rstudio_findgit.png)<!-- -->
+![](./pics/rstudio_findgit.png)<!-- -->
 
 ## Edit local version of README
 
@@ -283,7 +281,7 @@ message” box in the pop-up window that opens, and then hit the
 Finally, `Push` to the remote repository. You will be asked for your
 username and password.
 
-![](pics/rstudio_push.png)<!-- -->
+![](./pics/rstudio_push.png)<!-- -->
 
 Go back to your GitHub repository to see the changes.
 
