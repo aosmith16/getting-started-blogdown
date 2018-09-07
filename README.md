@@ -4,7 +4,7 @@ In spring 2018 I offered to do some work sessions on blogdown with a group of gr
 
 Note that all the info here has been gleaned from other available resources.  I simply collated things together to help students streamline the process.
 
-The first session was on getting Git and GitHub going and making sure R and Git could communicate.  Most of the info comes directly from [Happy Git and GitHub for R](http://happygitwithr.com/).  This went more smoothly than I had hoped, and we had time to set up keys for SSH so folks don't have to sign in for every push.
+The first session was on getting Git and GitHub going and making sure R and Git could communicate.  Most of the info comes directly from [Happy Git and GitHub for the useR](http://happygitwithr.com/).  This went more smoothly than I had hoped, and we had time to set up keys for SSH so folks don't have to sign in for every push.
 
 The next sessions were info taken directly from the [blogdown book](https://bookdown.org/yihui/blogdown/) and [Alison Hill's blogdown post](https://alison.rbind.io/post/up-and-running-with-blogdown/).  
 
