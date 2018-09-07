@@ -6,7 +6,7 @@ output:
       toc: TRUE
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -22,10 +22,9 @@ Go to https://github.com/ and sign up.  You'll need to pick a user name that you
 
 You will need to associate your account with an email address.  I recommend picking an email address you will have for the long-term, so consider using a personal email instead of your temporary school email.  You can change this later if needed (I did), but it is simplest to pick a long-term email from the start.
 
-![](./01_git_day_files/pics/git_start_window.png)
 
-```{r, echo = FALSE, results = "asis"}
-knitr::include_graphics("./01_git_day_files/pics/git_start_window.png")
+```{r, echo = FALSE, dev = "png"}
+knitr::include_graphics("01_git_day_files/figure-gfm/git_start_window.PNG")
 ```
 
 
@@ -42,7 +41,7 @@ Install Git for Windows from https://gitforwindows.org/.
 During installation you can use the defaults for most options.  Make sure the "Use Git from the Windows Command Prompt" is chosen when "Adjusting the PATH environment".  This was the default when I installed things, but watch for this and make sure.
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/git_command_prompt.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/git_command_prompt.PNG")
 ```
 
 
@@ -51,7 +50,7 @@ You should be able to find the executable in `C:/Program Files/Git/bin/git.exe`.
 At the end of installation, launch Git Bash.  You don't need to review the release notes.
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/git_openbash.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/git_openbash.png")
 ```
 
 ## Mac OS
@@ -99,7 +98,7 @@ Now we need to make sure Git and GitHub can talk to each other and that we can m
 Go to your GitHub account.  Go to the `+` drop down menu in the upper righthand corner and choose `New Repository`.
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/github_newrepo.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/github_newrepo.png")
 ```
 
 1. Make a repository name.  Keep it simple.  You cannot have spaces in names but can include dashes (hyphens).  I used `test` for my first test repo, which I will delete at the end of this practice.
@@ -115,7 +114,7 @@ knitr::include_graphics("./01_git_day_files/pics/github_newrepo.png")
 6. Once the repository is created, click the `Clone or download` button and copy the URL to the clipboard with the clipboard button.
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/github_clone.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/github_clone.png")
 ```
 
 ## Clone repository from GitHub onto local computer
@@ -192,25 +191,25 @@ In RStudio, go to `File > New Project...`
 Select `Version Control`
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/rstudio_vcontrol.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_vcontrol.png")
 ```
 
 And then `Git`
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/rstudio_git.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_git.png")
 ```
 
 Paste the cloned URL from the remote repository.  You can browse to choose a directory for the local repository if you want to save it somewhere specific.
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/rstudio_clone.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_clone.png")
 ```
 
 The remote files will be downloaded into the new folder and the new Project will open.  You will have a `Git` tab in your "Environment" Pane in RStudio.
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/rstudio_gittab.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_gittab.png")
 ```
 
 **If you cannot make a version control project**
@@ -226,7 +225,7 @@ Make sure the path to the Git Executable is `C:/Program Files/Git/bin/git.exe`. 
 See [Chapter 14](http://happygitwithr.com/rstudio-see-git.html) of Happy Git for more detailed information.
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/rstudio_findgit.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_findgit.png")
 ```
 
 ## Edit local version of README
@@ -243,7 +242,7 @@ Finally, `Push` to the remote repository.  You will be asked for your username a
 
 
 ```{r, echo = FALSE}
-knitr::include_graphics("./01_git_day_files/pics/rstudio_push.png")
+knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_push.png")
 ```
 
 Go back to your GitHub repository to see the changes.
