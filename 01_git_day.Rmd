@@ -254,3 +254,54 @@ Did it work?  Yay!
 
 Did something fail?  Bummer.  Something is wrong.  Go to Chapter 15 of Happy Git, [RStudio, Git, and GitHub hell](http://happygitwithr.com/troubleshooting.html) to try to solve the problem.
 
+# Clean up
+
+Since this particular repository was simply for testing, you can delete it locally and remotely.
+
+Go to the respository page on GitHub and then go to `Settings`.  Scroll down to the very bottom until you see the `Delete this repository` button.  Push it and follow the instructions.
+
+# Adding SSH key for authentication
+
+Once you start making a fair number of changes, it is a pain to have to enter your GitHub credentials every time you want to push.  I think the easiest thing to do is to add a SSH key in RStudio.
+
+## Set up SSH key pair in RStudio
+
+RStudio makes it pretty easy to do this.  You can (add likely should) add a passphrase for this, but I am skipping that step here.
+
+In RStudio, go to `Tools > Global Options... > Git/SVN`.
+
+Click on `Create RSA key`.  RStudio will generate and store the keys for you.
+
+## Add key to ssh-agent via shell
+
+Open a shell to tell the ssh-agent about the key RStudio made.
+
+First return the agent info.
+
+- On Windows: `eval $(ssh-agent -s)`
+
+- On Mac OS: `eval "$(ssh-agent -s)"`
+
+Then add the key via `ssh-add`.  
+
+- On Windows I had to write out the whole directory path.  RStudio stores the key pair in your `Users` folder so that is the path I had to write out (my user folder is `muldoona`). `ssh-add c:/Users/muldoona/.ssh/id_rsa`
+
+- On Mac you may be able to write things out with a relative file path.  I haven't tried it.  `ssh-add ~/.ssh/id_rsa`
+
+## Copy public key to clipboard
+
+Now go back to RStudio `Tools > Global Options... > Git/SVN`.
+
+Click on the blue `View public key` and then copy the key from the pop-up window.
+
+```{r, echo = FALSE}
+knitr::include_graphics("01_git_day_files/figure-gfm/copy_sshkey.PNG")
+```
+
+## Paste the key to GitHub
+
+Go to your GitHub repository.  Choose `Settings` under the drop-down menu in the upper righthand corner.  Then go to `SSH & GPG keys` and click `New SSH key`.
+
+Give the key a name and then paste the key you copied from RStudio as is and then click `Add SSH key`.  
+
+You should now be able to push and pull from GitHub without having to authenticate each time.
