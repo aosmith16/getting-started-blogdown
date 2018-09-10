@@ -6,10 +6,6 @@ output:
       toc: TRUE
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 During the first blogdown work session we didn't do anything with blogdown and instead spent time getting Git and GitHub up and running.  Everything here is covered in more detail in [Happy Git and GitHub for the userR](http://happygitwithr.com/), I simply picked out the main bits so we could run through things together.
 
 I spent time on Git because I think it's easiest to maintain your website materials on GitHub for continuous deployment.  I did not spend any time talking about Git and version control and why these are important but it's definitely worth [reading through that section of Happy Git](http://happygitwithr.com/big-picture.html).
@@ -24,10 +20,6 @@ You will need to associate your account with an email address.  I recommend pick
 
 ![](01_git_day_files/figure-gfm/git_start_window.PNG)
 
-```{r, echo = FALSE, dev = "png"}
-knitr::include_graphics("01_git_day_files/figure-gfm/git_start_window.PNG")
-```
-
 
 # Update R and RStudio to current versions
 
@@ -40,6 +32,8 @@ Make sure you have current versions of R and RStudio.  In spring 2018 R 3.5.0 ha
 Install Git for Windows from https://gitforwindows.org/.
 
 During installation you can use the defaults for most options.  Make sure the "Use Git from the Windows Command Prompt" is chosen when "Adjusting the PATH environment".  This was the default when I installed things, but watch for this and make sure.
+
+![](01_git_day_files/figure-gfm/git_command_prompt.PNG)
 
 ```{r, echo = FALSE}
 knitr::include_graphics("01_git_day_files/figure-gfm/git_command_prompt.PNG")
@@ -56,7 +50,7 @@ knitr::include_graphics("01_git_day_files/figure-gfm/git_openbash.PNG")
 
 ## Mac OS
 
-I'm putting two options here (I don't have a Mac so have never tried either `r emo::ji("stuck_out_tongue_winking_eye")` but these  are the top two recommendations in Happy Git).
+I'm putting two options here (I don't have a Mac so have never tried either :stuck_out_tongue_winking_eye: but these  are the top two recommendations in Happy Git).
 
 1. Install Xcode.  This can be done using command line tools in the shell using `xcode-select --install`.  
 
@@ -98,9 +92,7 @@ Now we need to make sure Git and GitHub can talk to each other and that we can m
 
 Go to your GitHub account.  Go to the `+` drop down menu in the upper righthand corner and choose `New Repository`.
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/github_newrepo.PNG")
-```
+![](01_git_day_files/figure-gfm/github_newrepo.PNG)
 
 1. Make a repository name.  Keep it simple.  You cannot have spaces in names but can include dashes (hyphens).  I used `test` for my first test repo, which I will delete at the end of this practice.
 
@@ -114,9 +106,7 @@ knitr::include_graphics("01_git_day_files/figure-gfm/github_newrepo.PNG")
 
 6. Once the repository is created, click the `Clone or download` button and copy the URL to the clipboard with the clipboard button.
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/github_clone.PNG")
-```
+![](01_git_day_files/figure-gfm/github_clone.PNG)
 
 ## Clone repository from GitHub onto local computer
 
@@ -192,27 +182,20 @@ In RStudio, go to `File > New Project...`
 
 Select `Version Control`
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_vcontrol.PNG")
-```
+![](01_git_day_files/figure-gfm/rstudio_vcontrol.PNG)
+
 
 And then `Git`
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_git.PNG")
-```
+![](01_git_day_files/figure-gfm/rstudio_git.PNG)
 
 Paste the cloned URL from the remote repository.  You can browse to choose a directory for the local repository if you want to save it somewhere specific.
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_clone.PNG")
-```
+![](01_git_day_files/figure-gfm/rstudio_clone.PNG)
 
 The remote files will be downloaded into the new folder and the new Project will open.  You will have a `Git` tab in your "Environment" Pane in RStudio.
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_gittab.PNG")
-```
+![](01_git_day_files/figure-gfm/rstudio_gittab.PNG)
 
 **If you cannot make a version control project**
 
@@ -242,10 +225,7 @@ Select `Commit` in the `Git` tab, write a message in the "Commit message" box in
 
 Finally, `Push` to the remote repository.  You will be asked for your username and password.
 
-
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_push.PNG")
-```
+![](01_git_day_files/figure-gfm/rstudio_push.PNG)
 
 Go back to your GitHub repository to see the changes.
 
@@ -295,14 +275,12 @@ Now go back to RStudio `Tools > Global Options... > Git/SVN`.
 
 Click on the blue `View public key` and then copy the key from the pop-up window.
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/copy_sshkey.PNG")
-```
+![](01_git_day_files/figure-gfm/copy_sshkey.PNG)
 
 ## Paste the key to GitHub
 
 Go to your GitHub repository.  Choose `Settings` under the drop-down menu in the upper righthand corner.  Then go to `SSH & GPG keys` and click `New SSH key`.
 
-Give the key a name and then paste the key you copied from RStudio as is and then click `Add SSH key`.  
+Give the key a name and then paste the key you copied from RStudio as is and then click `Add SSH key`. 
 
 You should now be able to push and pull from GitHub without having to authenticate each time.
