@@ -1,5 +1,6 @@
 ---
 title: "Session 1 - Git Day"
+author: "Ariel Muldoon"
 date: "May 7, 2018"
 output: 
   github_document:
@@ -169,7 +170,7 @@ Once you know Git and GitHub are communicating, it's time to make sure we can us
 
 Delete the local version of the repository.  We'll make it again via RStudio.
 
-## Start new Project
+## Start new version control Project
 
 In RStudio, go to `File > New Project...`
 
