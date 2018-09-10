@@ -7,10 +7,6 @@ output:
       toc: TRUE
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 In our second work session the goal was to install blogdown and Hugo and then get started on making a website!  A good portion of this session was spent on starting to personalize our new website. 
 
 All of this information (and much more!) can be found in the book [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/).  Alison Hill's post [Up and running with blogdown](https://alison.rbind.io/post/up-and-running-with-blogdown/) is a good blueprint, which I basically followed for this work session.
@@ -28,19 +24,19 @@ Once **blogdown** is installed, we need to install the static site generator Hug
 
 The materials for the website will be maintained on a GitHub repository, which you can then use to deploy your website.    
 
-Create a new GitHub repository, give it a name that you will associate with your website, and add a `README` file (but not a `.gitignore` file).  Copy the repository URL and clone it into a local directory by making a new version control Project in RStudio.  Refer to [first session notes](https://github.com/aosmith16/getting-started-blogdown/blob/master/01_git_day.Rmd#start-new-version-control-project) for a reminder of how to do this.
+Create a new GitHub repository, give it a name that you will associate with your website, and add a `README` file (but not a `.gitignore` file).  Copy the repository URL and clone it into a local directory by making a new version control Project in RStudio.  Refer to the [first session notes](https://github.com/aosmith16/getting-started-blogdown/blob/master/01_git_day.Rmd#start-new-version-control-project) for a reminder of how to do this.
 
 ## Edit .gitignore
 
 Once you have a local copy of the directory, edit the `.gitignore` file.  Make sure it contains
-`.Rproj.user`
-`.Rhistory`
-`.RData`
-`.Ruserdata`
-`blogdown`
-`public/` *This one is very important*
-`.DS_Store` *Include for Mac only*
-`Thumbs.db` *Include for Windows only*
+`.Rproj.user`  
+`.Rhistory`  
+`.RData`  
+`.Ruserdata`  
+`blogdown`  
+`public/` *This one is very important*  
+`.DS_Store` *Include for Mac only*  
+`Thumbs.db` *Include for Windows only*  
 
 # Pick a website theme
 
@@ -54,7 +50,7 @@ Since everyone's goal was to have a personal website to showcase their academic 
 
 Once you've picked a theme, you can create a new site within your RStudio project.  You'll need to know the name of the repository that theme is stored at.  You can generally see this if you hover over the `Download` button when looking at the theme page.
 
-Here is example code for making a new site with the Hugo Academic theme:
+Here is example code for making a new site with the Hugo Academic theme:  
 `blogdown::new_site(theme = "gcushen/hugo-academic", theme_example = TRUE)`
 
 It is customary to add the `theme_example` so you have examples to work off of.  This makes it easy to add your own documents.  By the time you are ready to deploy your website, you will have deleted the extraneous files and/or replaced the information in them with your own.
@@ -63,9 +59,9 @@ When you run the `new_site()` code you will see some messages and then you will 
 
 # Change the website theme
 
-If you make a website and then later decide you want to change the theme you can do so.  I initially used [Future Imperfect](https://themes.gohugo.io/future-imperfect/) for [my blog](https://aosmith.rbind.io/) but then ran into things I didn't like so switched to [Tranquilpeak](https://themes.gohugo.io/hugo-tranquilpeak-theme/).  Just try to be careful not to make too many changes to a theme before you decide to switch; tweaking themes can take a lot of time if you're not careful! :laughing:
+If you make a website and then later decide you want to change the theme you can do so.  I initially used [Future Imperfect](https://themes.gohugo.io/future-imperfect/) for [my blog](https://aosmith.rbind.io/) but then ran into things I didn't like so switched to [Tranquilpeak](https://themes.gohugo.io/hugo-tranquilpeak-theme/).  Just try to be careful not to make too many changes to a theme before you decide to switch; tweaking themes can take a lot of time if you're not careful! :smile:
 
-To change the theme after you've made a site:
+To change the theme after you've made a site:  
 `blogdown::install_theme(theme = "gcushen/hugo-academic", theme_example = TRUE, update_config = TRUE)`
 
 # Edit the Project options
@@ -112,4 +108,4 @@ Once you've made all the changes you want or are finished for the day you'll wan
 
 The first stage-commit-push will involve a lot of files, since there are so many files associated with the theme.  **If you are on a Windows machine** you may have problems with staging all the files if you try to do this within RStudio.  What I usually see is that RStudio freezes and the eventually have to force a restart.  See the conversation [here](https://community.rstudio.com/t/blogdown-unable-to-stage-and-commit/6621) for more info.
 
-To be on the safe side, I'd recommend you stage either via the shell or via your alternative Git client.  You can open up a shell in RStudio by going to `Tools > Shell...` or simply go to the `Terminal` pane (next to the `Console`) and stage via `git add -A`.  Once things are staged I haven't had any problems committing or pushing.
+To be on the safe side, I'd recommend you stage either via the shell or via your alternative Git client.  You can open up a shell in RStudio by going to `Tools > Shell...` or simply go to the `Terminal` pane (next to the `Console`) and stage via `git add -A`.  Once things are staged I haven't had any problems committing or pushing from within RStudio.
