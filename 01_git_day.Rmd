@@ -35,18 +35,11 @@ During installation you can use the defaults for most options.  Make sure the "U
 
 ![](01_git_day_files/figure-gfm/git_command_prompt.PNG)
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/git_command_prompt.PNG")
-```
-
-
 You should be able to find the executable in `C:/Program Files/Git/bin/git.exe`.
 
 At the end of installation, launch Git Bash.  You don't need to review the release notes.
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/git_openbash.PNG")
-```
+![](01_git_day_files/figure-gfm/git_openbash.PNG)
 
 ## Mac OS
 
@@ -209,9 +202,7 @@ Make sure the path to the Git Executable is `C:/Program Files/Git/bin/git.exe`. 
 
 See [Chapter 14](http://happygitwithr.com/rstudio-see-git.html) of Happy Git for more detailed information.
 
-```{r, echo = FALSE}
-knitr::include_graphics("01_git_day_files/figure-gfm/rstudio_findgit.PNG")
-```
+![](01_git_day_files/figure-gfm/rstudio_findgit.PNG)
 
 ## Edit local version of README
 
