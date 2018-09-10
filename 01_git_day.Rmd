@@ -148,7 +148,7 @@ Then we can check the status to see that we've edited a file locally.
 
 ## Update GitHub with the local changes
 
-The process for updating the remote repository in Github involves *staging*, *committing*, and *pushing*.
+The process for updating the remote repository in GitHub involves *staging*, *committing*, and *pushing*.
 
 First, stage any changes.  Use `-A` to stage all files that have been edited.
 
@@ -231,7 +231,7 @@ Did something fail?  Bummer.  Something is wrong.  Go to Chapter 15 of Happy Git
 
 Since this particular repository was simply for testing, you can delete it locally and remotely.
 
-Go to the respository page on GitHub and then go to `Settings`.  Scroll down to the very bottom until you see the `Delete this repository` button.  Push it and follow the instructions.
+Go to the repository page on GitHub and then go to `Settings`.  Scroll down to the very bottom until you see the `Delete this repository` button.  Push it and follow the instructions.
 
 # Adding SSH key for authentication
 
