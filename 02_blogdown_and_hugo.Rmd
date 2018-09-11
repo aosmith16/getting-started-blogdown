@@ -98,7 +98,7 @@ Before you deploy your website, make sure your `baseurl` ends with `/`.  General
 
 To preview a local copy of the website in RStudio you need to serve the site.  You can do this manually with `blogdown::serve_site()` or use the `Addins` menu in RStudio to choose `Serve Site` from the blogdown section.
 
-![](02_files/pics/servesite.png)
+![](02_files/servesite.png)
 
 I often have to serve the site and then make and save a change from a file before I can see any of the changes I made.  This likely depends on your operating system.
 

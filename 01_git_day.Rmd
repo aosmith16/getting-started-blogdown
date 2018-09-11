@@ -19,7 +19,7 @@ Go to https://github.com/ and sign up.  You'll need to pick a user name that you
 
 You will need to associate your account with an email address.  I recommend picking an email address you will have for the long-term, so consider using a personal email instead of your temporary school email.  You can change this later if needed (I did), but it is simplest to pick a long-term email from the start.
 
-![](01_git_day_files/figure-gfm/git_start_window.PNG)
+![](01_files/git_start_window.PNG)
 
 
 # Update R and RStudio to current versions
@@ -34,13 +34,13 @@ Install Git for Windows from https://gitforwindows.org/.
 
 During installation you can use the defaults for most options.  Make sure the "Use Git from the Windows Command Prompt" is chosen when "Adjusting the PATH environment".  This was the default when I installed things, but watch for this and make sure.
 
-![](01_git_day_files/figure-gfm/git_command_prompt.PNG)
+![](01_files/git_command_prompt.PNG)
 
 You should be able to find the executable in `C:/Program Files/Git/bin/git.exe`.
 
 At the end of installation, launch Git Bash.  You don't need to review the release notes.
 
-![](01_git_day_files/figure-gfm/git_openbash.PNG)
+![](01_files/git_openbash.PNG)
 
 ## Mac OS
 
@@ -86,7 +86,7 @@ Now we need to make sure Git and GitHub can talk to each other and that we can m
 
 Go to your GitHub account.  Go to the `+` drop down menu in the upper righthand corner and choose `New Repository`.
 
-![](01_git_day_files/figure-gfm/github_newrepo.PNG)
+![](01_files/github_newrepo.PNG)
 
 1. Make a repository name.  Keep it simple.  You cannot have spaces in names but can include dashes (hyphens).  I used `test` for my first test repo, which I will delete at the end of this practice.
 
@@ -100,7 +100,7 @@ Go to your GitHub account.  Go to the `+` drop down menu in the upper righthand 
 
 6. Once the repository is created, click the `Clone or download` button and copy the URL to the clipboard with the clipboard button.
 
-![](01_git_day_files/figure-gfm/github_clone.PNG)
+![](01_files/github_clone.PNG)
 
 ## Clone repository from GitHub onto local computer
 
@@ -176,20 +176,20 @@ In RStudio, go to `File > New Project...`
 
 Select `Version Control`
 
-![](01_git_day_files/figure-gfm/rstudio_vcontrol.PNG)
+![](01_files/rstudio_vcontrol.PNG)
 
 
 And then `Git`
 
-![](01_git_day_files/figure-gfm/rstudio_git.PNG)
+![](01_files/rstudio_git.PNG)
 
 Paste the cloned URL from the remote repository.  You can browse to choose a directory for the local repository if you want to save it somewhere specific.
 
-![](01_git_day_files/figure-gfm/rstudio_clone.PNG)
+![](01_files/rstudio_clone.PNG)
 
 The remote files will be downloaded into the new folder and the new Project will open.  You will have a `Git` tab in your "Environment" Pane in RStudio.
 
-![](01_git_day_files/figure-gfm/rstudio_gittab.PNG)
+![](01_files/rstudio_gittab.PNG)
 
 **If you cannot make a version control project**
 
@@ -203,7 +203,7 @@ Make sure the path to the Git Executable is `C:/Program Files/Git/bin/git.exe`. 
 
 See [Chapter 14](http://happygitwithr.com/rstudio-see-git.html) of Happy Git for more detailed information.
 
-![](01_git_day_files/figure-gfm/rstudio_findgit.PNG)
+![](01_files/rstudio_findgit.PNG)
 
 ## Edit local version of README
 
@@ -217,7 +217,7 @@ Select `Commit` in the `Git` tab, write a message in the "Commit message" box in
 
 Finally, `Push` to the remote repository.  You will be asked for your username and password.
 
-![](01_git_day_files/figure-gfm/rstudio_push.PNG)
+![](01_files/rstudio_push.PNG)
 
 Go back to your GitHub repository to see the changes.
 
@@ -267,7 +267,7 @@ Now go back to RStudio `Tools > Global Options... > Git/SVN`.
 
 Click on the blue `View public key` and then copy the key from the pop-up window.
 
-![](01_git_day_files/figure-gfm/copy_sshkey.PNG)
+![](01_files/copy_sshkey.PNG)
 
 ## Paste the key to GitHub
 
